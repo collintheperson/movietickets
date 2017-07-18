@@ -27,7 +27,7 @@ MovieChoice.prototype.ticketTime = function () {
 }
 
 MovieChoice.prototype.ticketName = function () {
-  if (this.moviename >= 3) {
+  if (this.moviename === "newrelease") {
     return .50
   } else {
     return 2.00
@@ -53,8 +53,7 @@ $(document).ready(function() {
 
     var newMovie = new MovieChoice(inputtedage, inputtedtime, inputtedmoviename, inputteddiscount)
 
-
-    $("#ticket-cost").append('<li>' + newMovie.price() + '</li>');
+    $("#ticket-cost").text(newMovie.price());
 
 
 
