@@ -8,6 +8,57 @@
     <title>Movie Tickets</title>
   </head>
   <body>
+    <div class="container-fluid">
+      <h1>Movie Select</h1>
+      <div class="row">
+        <div class="col-md-6 bg-primary">
+          <form id="movie-selection">
+            <div class="form-group">
+              <label for="new-age">Select your age:</label>
+              <select class="form-control" id="new-age">
+                <option value="child">Child(under 14)</option>
+                <option value="adult">Adult(14 or Older)</option>
+                <option value="senior">Senior(65 or Older)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-time">What time would you like to see a movie</label>
+              <select class="form-control" id="new-time">
+                <option value="11am">11am-4pm</option>
+                <option value="4pm">4pm to 11pm</option>
+                <option value="weekend">Weekend(Friday-Sunday)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-movie-name">What movie are you looking to see?</label>
+              <select class="form-control" id="new-movie-name">
+                <option value="1">Spider-Man:Homecoming</option>
+                <option value="2">Dunkirk</option>
+                <option value="3">Baywatch</option>
+                <option value="4">Top Gun</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-discount">Do you qualify for any of these discounts?</label>
+              <select class="form-control" id="new-discount">
+                <option value="student">Student with ID</option>
+                <option value="military">Military with ID</option>
+                <option value="movie">Movie Club Member</option>
+                <option value="none">No discount</option>
+              </select>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="show-cost">
+          <h2>Ticket Price:</h2>
+          <ul id="ticket-cost">
 
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
